@@ -1,0 +1,46 @@
+// Gender Bender
+// Fletcher Bach 2015	
+// v. 0.1
+
+{
+  "manifest_version": 2,
+
+  "name": "GenderBender",
+  "icons": {
+    "128": "icon128.png"
+  },
+
+  "description": "Experiment with digital gender bending and confound web advertising!",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "GenderBender"
+  },
+
+  // "page_action":{
+
+  //   },
+
+  "background": {
+    "scripts": ["jquery-1.11.2.min.js"],
+    "scripts": ["popup.js"],
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+
+  "permissions": [
+    //"tabs",
+    //"activeTab",
+    //"https://ajax.googleapis.com/",
+    //"http://www.*"
+    "http://www.google.com/*",
+    "https://www.google.com/*",
+    "https://www.google.com/settings/u/0/ads*",
+    "https://www.google.com/settings/u/0/ads/*"
+    // "http://*/*",
+    // "https://*/*"
+  ]
+}
